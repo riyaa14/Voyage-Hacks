@@ -7,11 +7,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // username: {
-  //   type: String,
-  //   required: true,
-  //   unique: true, // ensures no duplicate usernames
-  // },
   email: {
     type: String,
     required: true,
@@ -26,10 +21,11 @@ const userSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
-  // Completed challenges
+  // Completed challenges ids
   challengesDone: [
     {
-      type: String,
+      challengeID: String,
+      numberOfTimes: Number,
     },
   ],
   // Trips booked by the user

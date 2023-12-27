@@ -13,17 +13,8 @@ const challengeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  type: {
-    type: String,
-    enum: [
-      "Nightlife",
-      "Outdoor",
-      "Adventure",
-      "Cultural",
-      "Foodie",
-      "Family-friendly",
-      "Relaxation",
-    ],
+  category: {
+    type: Array,
   },
   vehicleNeeded: {
     type: [String],
@@ -35,7 +26,7 @@ const challengeSchema = new mongoose.Schema({
       required: true,
     },
     coordinates: {
-      type: [Number],
+      type: [String],
       required: true,
     },
   },
@@ -43,13 +34,8 @@ const challengeSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  qrCode: {
-    type: String,
-    required: true,
-  },
   completedBy: {
-    type: Number,
-    default: 0,
+    type: [String],
   },
 });
 

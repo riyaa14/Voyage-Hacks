@@ -10,6 +10,8 @@ const cors = require("cors");
 // import userRoutes from "./routes/user";
 const userRoutes = require("./routes/user");
 const challengesRoutes = require("./routes/challenge");
+const businessRoutes = require("./routes/business");
+const requestRoutes = require("./routes/request");
 
 // an express app
 const app = express();
@@ -22,7 +24,8 @@ app.use(cors());
 // routes
 app.use("/api/user", userRoutes);
 app.use("/api/challenges", challengesRoutes);
-// app.use("/api/business", businessRoutes);
+app.use("/api/business", businessRoutes);
+app.use("/api/requests", requestRoutes);
 
 // connect to db
 mongoose

@@ -1,6 +1,5 @@
 // import express from "express";
 const express = require("express");
-const requireAuth = require("../middleware/auth");
 
 // controller functions
 const { signupUser, loginUser } = require("../controllers/user");
