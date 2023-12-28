@@ -10,8 +10,8 @@ const generatePin = require("generate-pincode");
 
 // Get all challenges - autherized users only
 const getChallenges = async (req, res) => {
-  const categories = JSON.parse(req.query.category);
-  const location = JSON.parse(req.query.location);
+  const categories = req.query.category; // array
+  const location = req.query.location; // string
 
   try {
     if (categories.length && location) {
