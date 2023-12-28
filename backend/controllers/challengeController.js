@@ -10,20 +10,20 @@ const generatePin = require("generate-pincode");
 
 // Get all challenges - autherized users only
 const getChallenges = async (req, res) => {
-  const categories = req.query.category; // array
+  const category = req.query.category; // string
   const location = req.query.location; // string
 
   try {
-    if (categories.length && location) {
+    if (category && location) {
       var data = await Challenge.find({
-        category: { $in: categories },
+        category: category,
         location: {
           address: location,
         },
       }); // filtered based on category as well as location
-    } else if (categories.length) {
+    } else if (category) {
       var data = await Challenge.find({
-        category: { $in: categories },
+        category: category,
       }); // filtered based on category
     } else if (location) {
       var data = await Challenge.find({
