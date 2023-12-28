@@ -110,9 +110,20 @@ const enrollInChallenge = async (req, res) => {
     const code = generatePin(8);
     const challengeId = req.params.challengeId;
     const challenge = await Challenge.findById(req.params.challengeId);
-    console.log(challenge);
-    console.log("here");
-    console.log(req.user._id);
+
+    const exists = await Request.find({
+      challengeId: challengeId,
+      userId: req.user._id,
+    });
+
+    console.log(exists);
+
+    if (exists.length != 0) {
+      res.json({
+        msg: "already enrolled",
+      });
+    }
+
     const newPartnershipData = {
       businessId: challenge.businessId,
       challengeId: req.params.challengeId,
