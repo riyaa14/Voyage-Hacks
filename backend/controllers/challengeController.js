@@ -42,11 +42,11 @@ const getChallenges = async (req, res) => {
       query["location.address"] = location;
     }
 
-    const minPrice = req.query.minPrice;
+    //const minPrice = req.query.minPrice;
     const maxPrice = req.query.maxPrice;
 
-    if (minPrice !== undefined && maxPrice !== undefined) {
-      query.price = { $gte: minPrice, $lte: maxPrice };
+    if (maxPrice !== undefined) {
+      query.price = { $lte: maxPrice };
     }
 
     const data = await Challenge.find(query);
