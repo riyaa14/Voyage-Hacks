@@ -16,9 +16,9 @@ const challengeSchema = new mongoose.Schema({
   category: {
     type: Array,
   },
-  vehicleNeeded: {
-    type: [String],
-    enum: ["car", "bus", "train", "airplane"],
+  price: {
+    type: Number,
+    required: true,
   },
   location: {
     address: {

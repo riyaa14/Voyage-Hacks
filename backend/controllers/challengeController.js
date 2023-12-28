@@ -13,25 +13,43 @@ const getChallenges = async (req, res) => {
   const category = req.query.category; // string
   const location = req.query.location; // string
 
+  console.log(location);
+  console.log(category);
+
   try {
-    if (category && location) {
-      var data = await Challenge.find({
-        category: category,
-        location: {
-          address: location,
-        },
-      }); // filtered based on category as well as location
-    } else if (category) {
-      var data = await Challenge.find({
-        category: category,
-      }); // filtered based on category
-    } else if (location) {
-      var data = await Challenge.find({
-        location: {
-          address: location,
-        },
-      }); // filtered based on location only
-    } else var data = await Challenge.find({}); // all challenges (no filter)
+    // if (category && location) {
+    //   var data = await Challenge.find({
+    //     category: { $in: category },
+    //     "location.address": location,
+    //   }); // filtered based on category as well as location
+    // } else if (category) {
+    //   var data = await Challenge.find({
+    //     category: { $in: category },
+    //   }); // filtered based on category
+    // } else if (location) {
+    //   var data = await Challenge.find({
+    //     "location.address": location,
+    //   }); // filtered based on location only
+    // } else var data = await Challenge.find({}); // all challenges (no filter)
+
+    const query = {};
+
+    if (category) {
+      query.category = { $in: Array.isArray(category) ? category : [category] };
+    }
+
+    if (location) {
+      query["location.address"] = location;
+    }
+
+    const minPrice = req.query.minPrice;
+    const maxPrice = req.query.maxPrice;
+
+    if (minPrice !== undefined && maxPrice !== undefined) {
+      query.price = { $gte: minPrice, $lte: maxPrice };
+    }
+
+    const data = await Challenge.find(query);
 
     res.json(data);
   } catch (e) {
@@ -65,6 +83,7 @@ const postChallenge = async (req, res) => {
         coordinates: [req.body.longitude, req.body.latitude],
       },
       points: req.body.points,
+      price: req.body.price,
       completedBy: 0,
     };
 
