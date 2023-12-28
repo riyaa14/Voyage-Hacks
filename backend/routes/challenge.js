@@ -21,6 +21,6 @@ router.get(
 );
 router.post("/createChallenge", requireBusinessAuth, postChallenge);
 router.get("/:challengeId", requireUserAuth, getOneChallenge);
-router.post(":challengeId", requireUserAuth, enrollInChallenge);
+router.post("/enroll/:challengeId", requireUserAuth, enrollInChallenge);
 
 module.exports = router;

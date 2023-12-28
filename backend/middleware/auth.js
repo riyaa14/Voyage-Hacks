@@ -12,7 +12,7 @@ const requireUserAuth = async (req, res, next) => {
     const { _id } = jwt.verify(token, process.env.SECRET);
 
     // attaching user property to req
-    req.user = await User.findOne({ _id }).select("_id");
+    req.user = await User.findOne({ _id });
     console.log(req.user);
     next();
   } catch (e) {

@@ -6,7 +6,7 @@ const {
 } = require("../controllers/requestsController");
 
 const router = express.Router();
-router.get("/", requireBusinessAuth, getRequests);
-router.post("/:reqID", requireBusinessAuth, verificationOfChallenge);
+// router.get("/", requireBusinessAuth, getRequests);
+router.post("/verify", requireBusinessAuth, verificationOfChallenge);
 
 module.exports = router;

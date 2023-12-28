@@ -1,14 +1,17 @@
 const Challenge = require("../models/challenge");
+const User = require("../models/user");
 const Request = require("../models/requests");
-const TokenGenerator = require("totp-generator-ts");
+// const TokenGenerator = require("totp-generator-ts");
+// const {
+//   generateAuthCode,
+//   default: randomCode,
+// } = require("generate-random-code");
+const generatePin = require("generate-pincode");
 
 // Get all challenges - autherized users only
 const getChallenges = async (req, res) => {
   const categories = JSON.parse(req.query.category);
   const location = JSON.parse(req.query.location);
-
-  //const categories = 0;
-  //const location = 0;
 
   try {
     if (categories.length && location) {
@@ -104,18 +107,33 @@ const getOneChallenge = async (req, res) => {
 // Creation of request : user enrolls in a challenge - auth users only
 const enrollInChallenge = async (req, res) => {
   try {
-    const code = new TokenGenerator();
+    const code = generatePin(8);
+    const challengeId = req.params.challengeId;
     const challenge = await Challenge.findById(req.params.challengeId);
-
-    const newReqData = {
+    console.log(challenge);
+    console.log("here");
+    console.log(req.user._id);
+    const newPartnershipData = {
       businessId: challenge.businessId,
       challengeId: req.params.challengeId,
       userId: req.user._id,
       userName: req.user.name,
+      completedReqs: 0,
       code: code,
     };
 
-    const newReq = await Request.create(newReqData);
+    const newReq = await Request.create(newPartnershipData);
+
+    // add userId to challenge
+    //const challenge = await Challenge.findById(challengeId);
+    challenge.agentsEnrolled.push(req.user._id);
+    await challenge.save();
+
+    // add challenge completed for the user record
+    // const user = await User.findById();
+    req.user.challengesEnrolled.push(challengeId);
+    await req.user.save();
+
     res.status(200).json({ mssg: "enrolled", pin: code }); // we're sending the PIN to the user
   } catch (e) {
     res.status(401).json({ mssg: e.message });

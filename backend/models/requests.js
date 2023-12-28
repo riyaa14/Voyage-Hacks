@@ -17,11 +17,15 @@ const requestSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  code: {
+  completedReqs: {
     type: Number,
     require: true,
   },
-  createdAt: { type: Date, expires: "12h", default: Date.now },
+  code: {
+    type: String,
+    require: true,
+  },
+  //createdAt: { type: Date, expires: "12h", default: Date.now },
 });
 
 module.exports = mongoose.model("Request", requestSchema);

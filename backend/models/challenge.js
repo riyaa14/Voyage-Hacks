@@ -34,7 +34,7 @@ const challengeSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  completedBy: {
+  agentsEnrolled: {
     type: [String],
   },
 });

@@ -22,12 +22,9 @@ const userSchema = new mongoose.Schema({
     default: 0,
   },
   // Completed challenges ids
-  challengesDone: [
-    {
-      challengeID: String,
-      numberOfTimes: Number,
-    },
-  ],
+  challengesEnrolled: {
+    type: [String],
+  },
   // Trips booked by the user
   tripsBooked: [
     {
