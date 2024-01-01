@@ -74,10 +74,13 @@ const postChallenge = async (req, res) => {
     const businessId = req.business._id;
     const newChallengeData = {
       businessId: businessId,
+      businessName: req.business.name,
+      image: req.image,
+      timimgs: req.timings,
+      contact: req.contact,
       name: req.body.name,
       description: req.body.description,
       category: req.body.category,
-      vehicleNeeded: null,
       location: {
         address: req.body.address,
         coordinates: [req.body.longitude, req.body.latitude],
