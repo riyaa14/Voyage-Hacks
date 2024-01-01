@@ -65,4 +65,16 @@ const signupBusiness = async (req, res) => {
   // res.json({ mssg: "signup user" });
 };
 
-module.exports = { signupBusiness, loginBusiness };
+const getBusinessDetails = async (req, res) => {
+  try {
+    res.status(200).json({
+      name: req.business.name,
+      address: req.business.location.address,
+      description: req.business.description,
+    });
+  } catch (e) {
+    res.status(400).json({ msg: e.message });
+  }
+};
+
+module.exports = { signupBusiness, loginBusiness, getBusinessDetails };
