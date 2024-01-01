@@ -107,7 +107,7 @@ const postChallenge = async (req, res) => {
 // get one challenge details - auth users only
 const getOneChallenge = async (req, res) => {
   try {
-    const challenge = Challenge.findById(req.params.challengeId);
+    const challenge = await Challenge.findById(req.params.challengeId);
     if (!challenge) {
       res.status(401).json({ mssg: "no such challenge exists" });
     }
