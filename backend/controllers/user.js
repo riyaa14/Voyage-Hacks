@@ -68,7 +68,7 @@ const getUserDetails = async (req, res) => {
 
     res.status(200).json({
       profilePicture:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-ejlds&psig=AOvVaw2MKOgJzjT0JOUBc8riXpk-&ust=1704195465059000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLj074iNvIMDFQAAAAAdAAAAABAD",
+        "https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg",
       name: req.user.name,
       email: req.user.email,
       contact: req.user.contact,
