@@ -28,7 +28,7 @@ const loginBusiness = async (req, res) => {
 // signup user
 const signupBusiness = async (req, res) => {
   const { name, email, password, description, address } = req.body;
-  const agentCode = req.body;
+  const agentCode = req.body.agentCode;
 
   try {
     const business = await Business.signup(
