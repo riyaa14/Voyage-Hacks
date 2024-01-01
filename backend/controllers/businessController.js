@@ -42,7 +42,6 @@ const signupBusiness = async (req, res) => {
     const token = createToken(business._id);
 
     if (agentCode) {
-      // verify it
       const travelAgent = await User.find({ agentCode: agentCode }); // returns an array
 
       if (!travelAgent[0]) {
@@ -61,8 +60,6 @@ const signupBusiness = async (req, res) => {
   } catch (e) {
     res.status(400).json({ error: e.message });
   }
-
-  // res.json({ mssg: "signup user" });
 };
 
 const getBusinessDetails = async (req, res) => {

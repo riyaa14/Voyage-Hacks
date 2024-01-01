@@ -1,18 +1,6 @@
 const Challenge = require("../models/challenge");
 const Request = require("../models/requests");
 const generatePin = require("generate-pincode");
-const admin = require("firebase-admin");
-const uuid = require("uuid-v4");
-
-// firebase
-var serviceAccount = require("../voyage-hacks-firebase-adminsdk-kvk3n-6384727ef4.json");
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  storageBucket: "gs://voyage-hacks.appspot.com",
-});
-
-const bucket = admin.storage().bucket();
 
 // Get all challenges - autherized users only
 const getChallenges = async (req, res) => {
@@ -179,52 +167,10 @@ const enrollInChallenge = async (req, res) => {
   }
 };
 
-const uploadImg = async (req, res) => {
-  try {
-    // const dateTime = Date.now();
-
-    // const storageRef = ref(
-    //   storage,
-    //   `files/${req.file.originalname + "       " + dateTime}`
-    // );
-
-    // Create file metadata including the content type
-    const metadata = {
-      metadata: {
-        firebaseStorageDownloadTokens: uuid(),
-      },
-      contentType: req.file.mimetype,
-      cacheControl: "public, max-age=31536000",
-    };
-
-    // Upload the file in the bucket storage
-    const snapshot = await uploadBytesResumable(
-      storageRef,
-      req.file.buffer,
-      metadata
-    );
-    //by using uploadBytesResumable we can control the progress of uploading like pause, resume, cancel
-
-    // Grab the public url
-    const downloadURL = await getDownloadURL(snapshot.ref);
-
-    console.log("File successfully uploaded.");
-    return res.send({
-      message: "file uploaded to firebase storage",
-      name: req.file.originalname,
-      type: req.file.mimetype,
-      downloadURL: downloadURL,
-    });
-  } catch (error) {
-    return res.status(400).send(error.message);
-  }
-};
-
 module.exports = {
   getChallenges,
   getOneChallenge,
   getChallengesForBusiness,
   enrollInChallenge,
   postChallenge,
-  uploadImg,
 };

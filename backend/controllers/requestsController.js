@@ -62,7 +62,9 @@ const verificationOfChallenge = async (req, res) => {
 
       res.status(200).json({
         userPts: user.points,
-        completed: request[0].completedReqs,
+        userscompleted: request[0].completedReqs,
+        challengeName: challenge.name,
+        challengeId: challenge._id,
         msg: "user points updated and transaction recorded",
       });
     } else {
