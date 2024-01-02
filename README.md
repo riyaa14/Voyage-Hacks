@@ -1,10 +1,10 @@
-TravelRun
-Github Link- https://github.com/riyaa14/Voyage-Hacks
-Website Link- voyage-hacks.vercel.app (Login and signup might take several minutes)
-Video link-  https://drive.google.com/drive/folders/1ZIX5GmkDkqSgmfl3dQLRHjSPSdMya0DT?usp=drive_link
+#TravelRun
 
-Introduction
+1. Github Link- https://github.com/riyaa14/Voyage-Hacks
+2. Website Link- voyage-hacks.vercel.app (Login and signup might take several minutes)
+3. Video link-  https://drive.google.com/drive/folders/1ZIX5GmkDkqSgmfl3dQLRHjSPSdMya0DT?usp=drive_link
 
+##Introduction
 Travel Run is a platform built to bridge the gap between local businesses and travel agents.
 - Business can promote their services on the platform
 - Travel agents can browse through the list of these local businesses and hence make good packages for their customers
@@ -18,8 +18,8 @@ Benefit of Travel Agents -
 - They also get points when they bring a local business to the platform using their unique referral code.
 
 
-> This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. 
-> By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
+- This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. 
+- By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
 
 ## Table of Content-
 1. Technologies Used
