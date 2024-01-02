@@ -1,7 +1,7 @@
 #TravelRun
 
 1. Github Link- https://github.com/riyaa14/Voyage-Hacks
-2. Website Link- voyage-hacks.vercel.app (Login and signup might take several minutes)
+2. Website Link- https://voyage-hacks.vercel.app (Login and signup might take several minutes)
 3. Video link-  https://drive.google.com/drive/folders/1ZIX5GmkDkqSgmfl3dQLRHjSPSdMya0DT?usp=drive_link
 
 ##Introduction
