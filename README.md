@@ -1,10 +1,10 @@
-#TravelRun
+# TravelRun
 
 1. Github Link- https://github.com/riyaa14/Voyage-Hacks
 2. Website Link- https://voyage-hacks.vercel.app (Login and signup might take several minutes)
 3. Video link-  https://drive.google.com/drive/folders/1ZIX5GmkDkqSgmfl3dQLRHjSPSdMya0DT?usp=drive_link
 
-##Introduction
+## Introduction
 Travel Run is a platform built to bridge the gap between local businesses and travel agents.
 - Business can promote their services on the platform
 - Travel agents can browse through the list of these local businesses and hence make good packages for their customers
@@ -27,7 +27,6 @@ Benefit of Travel Agents -
 3. Future Scope
 4. Business Model
 
-
 ## Technologies Used 
 Next js, MongoDB, Node js, Express js
 
@@ -49,15 +48,12 @@ From luxurious hotels and fine dining to adrenaline-pumping adventures like camp
   ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/10a24334-4247-4260-9048-46e0c45f3c09)
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/16a7edb7-f37c-49ab-a75a-e8dc96b3fcd0)
 
-
 5. **Verification of Challenge:**
 When any customer of a travel agent goes to local business and verifies the challenge, travel agents get points!
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/9b2c8762-da5f-471b-b51f-cca8d3ac8267)
 
-
 7. **User profile:**
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/96ab082c-ef12-4f52-a44d-d0d4fbca48c6)
-
 
 8. **Business Profile:**
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/19ce591d-2d6a-4ea6-bc38-ce1c70622713)
@@ -69,8 +65,7 @@ When any customer of a travel agent goes to local business and verifies the chal
 ## Business Aspect- 
  Our platform operates on a marketplace model, bringing together travel agents and local businesses. We generate revenue through a transactional fee for each successful registration of local business on our platform.
 
-
-Future Scope-
+## Future Scope-
 1. Good Security
 2. Store for Travel Agents to avail their points in various forms
 3. AI Recommendation system: To keep the experience fresh and exciting, the system strives to offer a diverse set of recommendations. It balances similarity to previous choices with introducing new and potentially exciting options to encourage exploration
