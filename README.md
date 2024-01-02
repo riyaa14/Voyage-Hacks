@@ -1,71 +1,76 @@
-# Project Title
-Welcome to our innovative travel platform designed to bridge the gap between travel agents and local businesses at various destinations! Our website serves as a dynamic interface, empowering travel agents with a diverse array of options to enrich their travel packages.
+TravelRun
+Github Link- https://github.com/riyaa14/Voyage-Hacks
+Website Link- voyage-hacks.vercel.app (Login and signup might take several minutes)
+Video link-  https://drive.google.com/drive/folders/1ZIX5GmkDkqSgmfl3dQLRHjSPSdMya0DT?usp=drive_link
 
-From luxurious hotels and exquisite dining experiences to thrilling sports activities like camping and bungee jumping, we provide a comprehensive selection for travel agents to curate enticing packages. Local businesses can easily register on our platform, showcasing their unique plans and offerings for inclusion in travel itineraries.
+Introduction
 
-For travel agents, the process is seamless. They can explore a curated list of offerings, selecting the most appealing activities and businesses to enhance their travel packages. Once a decision is made, agents can generate a unique code, a key that travelers will utilize during their trip to access the chosen activities.
+Travel Run is a platform built to bridge the gap between local businesses and travel agents.
+- Business can promote their services on the platform
+- Travel agents can browse through the list of these local businesses and hence make good packages for their customers
 
-This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
+Benefit of Local Businesses - 
+- They can promote their business and get customers through travel agents at a very nominal fee.
 
-Join us on this journey to revolutionize the travel industry, creating mutually beneficial connections between agents and local businesses while enhancing the overall travel experience for individuals eager to explore and embrace diverse cultures and activities.
-
-## 📃 Table of Content-
-- Technologies Used
-- Features
-- Future Scope
-- Business Model
-- Limitations
-- Demo Video
-- Website Overview
+Benefit of Travel Agents - 
+- They can discover ‘hidden gems’ on our platform and thus make their packages much better
+- They get points on bringing customers to the business and this is done via a verification code.
+- They also get points when they bring a local business to the platform using their unique referral code.
 
 
-## 🖥️ Technologies Used:
-Next JS, _______________________
+> This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. 
+> By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
 
-## ✨Features-
+## Table of Content-
+1. Technologies Used
+2. Features
+3. Future Scope
+4. Business Model
 
-#### 1. Business Registration:
- Unlocking the doors for local businesses, our platform offers a hassle-free registration process. Here, businesses can showcase their offerings, unveil new plans, and even bid farewell to outdated packages. We believe in giving businesses the freedom to evolve with the times.
-Agent Registration:
-Our user-friendly registration process ensures that agents can effortlessly share their essential details, paving the way for a smooth onboarding experience.
 
-#### 2. User Authentication:
-Security is our top priority. For businesses, we've implemented a seamless verification process using their GST number, ensuring credibility. Travel agents, your agency identification number is your passport to a world of possibilities on our platform.
+## Technologies Used 
+Next js, MongoDB, Node js, Express js
 
-#### 3. Activity and Service Catalog:
+## Features Implemented 
+
+1. **Business Login and Registration:**
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/b3636dfd-1460-46b0-95f6-ed9cc864c126)
+
+2. **Agent Registration and Login:**
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/4473c156-3173-4f93-b365-edde0d5b894d)
+
+3. **Local Businesses Catalog:**
 From luxurious hotels and fine dining to adrenaline-pumping adventures like camping and bungee jumping, our catalog is your playground. Sort activities based on your preferences and create bespoke travel experiences.
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/571e4edb-abc6-442f-b3b7-f2e99e01f93e)
 
-#### 4. Search and Filters:
-Navigate through our expansive offerings with ease! Our robust search and filtering options empower agents to locate businesses and activities effortlessly. Whether it's by location, price range, season, or any other criteria, find what you're looking for in a blink.
-
-#### 5. Unique Code Generation:
-Agents, wield the power of exclusivity with our unique code system. Grant travelers special access, and with each issuance, accrue points redeemable for further enriching experiences.
-
-#### 6. Business Dashboard:
- Businesses, assume control through our user-friendly dashboard. Manage packages with finesse and uphold security standards with our OTP verification system. Each agent transaction is fortified by a unique OTP, ensuring legitimacy and trustworthiness.
+4. **Enroll in Challenge:**
+- Agents can partner up for the challenge created by local businesses by clicking on enroll and then they get a unique code.
+- When any customer of a travel agent goes to local business and verifies the challenge, travel agents get points!
+  ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/10a24334-4247-4260-9048-46e0c45f3c09)
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/16a7edb7-f37c-49ab-a75a-e8dc96b3fcd0)
 
 
-## 🚀 Future Scope-
-#### 1. Dynamic Package Creation:
- Enable travel agents to create dynamic travel packages by selecting and combining various activities and services from the catalog.
-
-#### 2. Inclusive Accessibility:
-We are committed to making our platform more accessible to a diverse audience. This involves improving language support, ensuring compatibility with various devices, and incorporating features that cater to users with different needs and preferences.
-
-#### 3. Recommendation system:
-To keep the experience fresh and exciting, the system strives to offer a diverse set of recommendations. It balances similarity to previous choices with introducing new and potentially exciting options to encourage exploration
+5. **Verification of Challenge:**
+When any customer of a travel agent goes to local business and verifies the challenge, travel agents get points!
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/9b2c8762-da5f-471b-b51f-cca8d3ac8267)
 
 
-## 💵Business Aspect- 
- Our platform operates on a two-sided marketplace model, bringing together travel agents and local businesses. We generate revenue through subscription fees for businesses,,and a transactional fee for each successful booking made through our platform.
-
-#### 1. Business Subscription Plans:
-Local businesses can subscribe to our platform by opting for different plans based on their needs. Subscription plans offer varying levels of visibility, marketing features, and analytics tools.
-
-#### 2. Transaction Fees:
-A nominal transaction fee is charged for each successful booking facilitated through our platform. This fee contributes to revenue generation while aligning our interests with the success of the businesses and agents on our platform.
-
-## 📽️ Demo Video
+7. **User profile:**
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/96ab082c-ef12-4f52-a44d-d0d4fbca48c6)
 
 
-## 💻 Website Overview
+8. **Business Profile:**
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/19ce591d-2d6a-4ea6-bc38-ce1c70622713)
+
+9. **Create a new Challenge**
+![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/9ce3e9d9-290d-482e-b049-2d22f3fce77b)
+
+
+## Business Aspect- 
+ Our platform operates on a marketplace model, bringing together travel agents and local businesses. We generate revenue through a transactional fee for each successful registration of local business on our platform.
+
+
+Future Scope-
+1. Good Security
+2. Store for Travel Agents to avail their points in various forms
+3. AI Recommendation system: To keep the experience fresh and exciting, the system strives to offer a diverse set of recommendations. It balances similarity to previous choices with introducing new and potentially exciting options to encourage exploration
