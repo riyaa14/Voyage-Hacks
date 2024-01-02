@@ -55,10 +55,10 @@ When any customer of a travel agent goes to local business and verifies the chal
 7. **User profile:**
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/96ab082c-ef12-4f52-a44d-d0d4fbca48c6)
 
-8. **Business Profile:**
+9. **Business Profile:**
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/19ce591d-2d6a-4ea6-bc38-ce1c70622713)
 
-9. **Create a new Challenge**
+11. **Create a new Challenge**
 ![image](https://github.com/riyaa14/Voyage-Hacks/assets/96983874/9ce3e9d9-290d-482e-b049-2d22f3fce77b)
 
 
