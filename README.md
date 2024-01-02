@@ -18,8 +18,7 @@ Benefit of Travel Agents -
 - They also get points when they bring a local business to the platform using their unique referral code.
 
 
-- This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. 
-- By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
+This platform not only empowers travel agents with a broader network of businesses but also serves as a catalyst for promoting local enterprises. By encouraging travelers to immerse themselves in the local culture and experience a myriad of activities, our project aims to foster a deeper connection between tourists and the destinations they visit.
 
 ## Table of Content-
 1. Technologies Used
